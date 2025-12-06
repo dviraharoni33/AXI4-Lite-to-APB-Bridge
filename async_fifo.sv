@@ -8,20 +8,20 @@ module async_fifo
    input logic wclk, 
    input logic wrst_n,
    input logic winc,
-   input logic [DATA_WIDTH -1:0] wdata,
+   input logic [DATA_WIDTH-1:0] wdata,
    output logic wfull,
   
    //APB
    input logic rclk,
    input logic rrst_n,
    input logic rinc, 
-   output logic [DATA_WIDTH -1:0] rdata,
+   output logic [DATA_WIDTH-1:0] rdata,
    output logic rempty
   );
 
  //memory
  localparam DEPTH = 1 << ADDR_WIDTH;
- logic [DATA_WIDTH-1:0] mem [0:DEPTH -1];
+ logic [DATA_WIDTH-1:0] mem [0:DEPTH-1];
   
  //pointers
  logic [ADDR_WIDTH:0] wptr_bin, wptr_gray;
@@ -55,7 +55,7 @@ module async_fifo
      wptr_gray <= 0;
     end else begin
    if (winc && !wfull) begin
-     mem[wptr_bin[ADDR_WIDTH -1:0]] <= wdata;
+     mem[wptr_bin[ADDR_WIDTH-1:0]] <= wdata;
      wptr_bin <= wptr_bin +1;
      wptr_gray <= (wptr_bin +1) ^ ((wptr_bin +1) >> 1);
      end
@@ -81,4 +81,5 @@ module async_fifo
         assign rempty = (rptr_gray == rq2_wptr_gray);
           
             
+
 endmodule
