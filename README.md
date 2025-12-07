@@ -36,7 +36,8 @@ The system is built from three main modular components:
     * 
 ![דיאגרמת מלבנים](https://github.com/user-attachments/assets/952ab6f0-227d-461e-9d86-370c9662ea3e)
 
-![FIFO](https://github.com/user-attachments/assets/13d23955-a5f8-45a2-a10f-bafe24e0d72c)
+![FIFO](https://github.com/user-attachments/assets/73c7b141-0232-4725-9336-e0b68ae83b3b)
+
 
 
 
