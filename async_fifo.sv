@@ -62,7 +62,7 @@ module async_fifo
     end
    end     
           
-  assign wfull = (wptr_gray ==              {~wq2_rptr_gray[ADDR_WIDTH:ADDR_WIDTH-1],      wq2_rptr_gray[ADDR_WIDTH-2:0]});       
+ assign wfull = (wptr_gray ==              {~wq2_rptr_gray[ADDR_WIDTH:ADDR_WIDTH+1],      wq2_rptr_gray[ADDR_WIDTH-2:0]});       
  
  
         always_ff @(posedge rclk or negedge rrst_n) begin 
@@ -83,4 +83,5 @@ module async_fifo
             
 
 endmodule
+
 
