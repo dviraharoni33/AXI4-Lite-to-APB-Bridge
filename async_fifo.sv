@@ -77,9 +77,10 @@ module async_fifo
           end
         end
         
-        assign rdata = mem[rptr_bin[ADDR_WIDTH -1:0]];
+        assign rdata = mem[rptr_bin[ADDR_WIDTH-1:0]];
         assign rempty = (rptr_gray == rq2_wptr_gray);
           
             
 
 endmodule
+
