@@ -84,4 +84,4 @@ Below is the waveform showing a successful **Write** transaction (0x55) followed
 * **Language:** SystemVerilog (IEEE 1800-2017)
 * **Simulation:** Aldec Riviera-PRO (via EDA Playground)
 * **Waveform Viewing:** EPWave
-* **Diagram:** Notes
+* **Diagram:** Notes, draw
