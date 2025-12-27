@@ -33,7 +33,7 @@ The system is built from three main modular components:
     * The "Brain" of the slow domain.
     * Reads commands from the FIFO and drives the APB Master interface.
     * Implements the APB state machine: `IDLE` -> `SETUP` -> `ACCESS`.
-    * 
+     
 ![דיאגרמת מלבנים](https://github.com/user-attachments/assets/952ab6f0-227d-461e-9d86-370c9662ea3e)
 
 ![FIFO](https://github.com/user-attachments/assets/73c7b141-0232-4725-9336-e0b68ae83b3b)
